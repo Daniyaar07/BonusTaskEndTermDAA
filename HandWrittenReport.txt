@@ -1,0 +1,14 @@
+Aho-Corasick Algorithm Report
+
+In this assignment I implemented the Aho-Corasick algorithm in Java.
+It searches for multiple patterns in text. I also used KMP for comparison.
+
+Aho-Corasick uses Trie to store patterns and failure links to handle mismatches. KMP searches each pattern separately.
+I also tested 10 , 100 , 1000 patterns with text lengths of 1000 , 10000 , 100000 characters.
+Each test was repeated 5 times using System.nanoTime().
+
+For 1000 patterns and 100000 characters:
+- Aho-Corasick : 3.200 ms
+- KMP: 564.488 ms
+
+Aho-Corasick was faster in my tests because it searches multiple patterns at once. KMP is simpler for searching one pattern.
